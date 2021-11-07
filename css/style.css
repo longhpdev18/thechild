@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --blueColor: #5193B3;
+    --greenColor: #62C4C3;
+    --yellowColor: #F8D49B;
+    --creamColor: #F8E6CB;
+    --whiteColor: #fff;
+    --darkColor: #000;
+    --whiteColor3: rgba(255, 255, 255, .3);
+    --whiteColor6: rgba(255, 255, 255, .6);
+    --whiteColor9: rgba(255, 255, 255, .9);
+    --darkColor3: rgba(0, 0, 0, .3);
+    --darkColor6: rgba(0, 0, 0, .6);
+    --darkColor9: rgba(0, 0, 0, .9);
+
+    --spaceS: 8px;
+    --spaceM: 16px;
+    --spaceL: 24px;
+    --spaceXl: 32px;
+    --space2Xl: 48px;
+    --space3Xl: 56px;
+    --space4Xl: 63px;
+    --space5Xl: 72px;
+    --mainFont: 'Open Sans', sans-serif;
+    --secondFont: 'Alfa Slab One', cursive;
+    --tertiaryFont: 'Roboto Slab', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .blur-white {
+        background-color: rgba(255, 255, 255, .5);
+        -webkit-backdrop-filter: blur(2rem);
+        backdrop-filter: blur(2rem);
+    }
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 5rem;
+    color: var(--blueColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-wp {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 120rem;
+}
+
+.header-wp .left {
+    width: 10%;
+    height: 4rem;
+}
+
+.header-wp .brand {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .brand-logo {
+    height: 5rem;
+    object-fit: cover;
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero .bg-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .hero-wp {
+    width: 100%;
+    max-width: 120rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 6.3rem;
+    flex-direction: column;
+}
+
+.hero-wp .hero-box {
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--whiteColor6);
+}
+
+.hero-box .title-brand {
+    font-size: 1.6rem;
+    letter-spacing: 12px;
+}
+
+.hero-box .title {
+    font-size: 7.2rem;
+    font-weight: 900;
+    font-family: var(--mainFont);
+}
+
+.hero-box .title-years {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 12px;
+    font-family: var(--mainFont);
+}
+
+.hero-wp .hero-clock {
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--whiteColor6);
+}
+
+.hero-clock .clock-item {
+    width: calc(100% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clock-item .clock-time {
+    font-size: 3.2rem;
+}
+
+.hero-processbar {
+    width: 100%;
+    max-width: 60rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    padding: var(--spaceS);
+    margin-top: var(--spaceL);
+}
+
+.hero-processbar .processbar {
+    background-color: var(--whiteColor3);
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+}
+
+.processbar .processbar-load {
+    width: 79%;
+    height: 100%;
+    background-color: var(--whiteColor6);
+}
+
+.hero-expired {
+    width: 100%;
+    min-height: 5rem;
+    max-width: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spaceS);
+    padding: var(--spaceS);
+}
+
+.hero-expired .expired {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.expired-text strong {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.expired .expired-slogan {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: italic;
+    display: none;
+    margin-top: --spaceS;
+}
+
+.expired-slogan.active {
+    display: block;
+}
