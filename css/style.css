@@ -214,6 +214,7 @@ body {
     background-color: white;
 }
 
+
 .section-center {
     width: 100%;
     display: flex;
@@ -285,23 +286,37 @@ body {
 }
 
 .section-2 {
-    z-index: 4;
+    z-index: 3;
     position: sticky;
     top: 0;
 }
 
 .section-3 {
-    z-index: 5;
-    position: sticky;
+    z-index: 3;
+    position: relative;
     top: 0;
 }
-
 
 .section-4 {
-    z-index: 5;
+    z-index: 3;
     position: sticky;
     top: 0;
 }
+
+.section-sticky {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+}
+
+.section-relative {
+    z-index: 3;
+    position: relative;
+    top: 0;
+}
+
+
+
 
 
 @media screen and (max-width: 767px) {
