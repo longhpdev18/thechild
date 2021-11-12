@@ -12,7 +12,7 @@ var x = setInterval(function () {
     var toDistance = toEnd - toNow;
 
     cvtEndDate = end / (1000 * 60 * 60 * 24);
-    cvtStartDate = start / (1000 * 60 * 60 * 24) ;
+    cvtStartDate = start / (1000 * 60 * 60 * 24);
 
     var toSeconds = (toEnd - toStart);
 
