@@ -204,7 +204,7 @@ body {
 
 .section-wp {
     width: 100%;
-    max-width: 100%;
+    min-width: 100vh;
     display: flex;
     align-items: center;
     font-size: 3.2rem;
@@ -212,6 +212,69 @@ body {
 
 .section-white {
     background-color: white;
+}
+
+.section-black {
+    background-color: black;
+}
+
+.section-8 .section-left {
+    font-size: 7.2rem;
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.section-8 .section-right {
+    font-size: 7.2rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.section-9 .section-left {
+    font-size: 7.2rem;
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    width: 50%;
+    height: 100vh;
+}
+
+.section-9 .section-right {
+    font-size: 7.2rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    width: 50%;
+    height: 100vh;
+}
+
+.section-10 .section-left {
+    font-size: 7.2rem;
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    width: 50%;
+    height: 100vh;
+}
+
+.section-10 .section-right {
+    font-size: 7.2rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    width: 50%;
+    height: 100vh;
 }
 
 
@@ -231,10 +294,14 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.gradientBlue {
+.txtGradientBlue {
     background: -webkit-linear-gradient(45deg, #6717cd, #2871fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.txtColorWhite {
+    color: white;
 }
 
 .section-left {
