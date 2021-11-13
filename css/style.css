@@ -424,4 +424,12 @@ body {
         width: 100%;
         height: 60%;
     }
+
+    .section-wp span {
+        font-size: 4.2rem;
+    }
+
+    .section-wp h1 {
+        font-size: 5.6rem;
+    }
 }
