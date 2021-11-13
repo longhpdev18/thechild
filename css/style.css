@@ -57,6 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 /* HERO */
@@ -388,48 +389,46 @@ body {
 
 @media screen and (max-width: 767px) {
 
-    .section-wp {
-        position: relative;
-        margin-top: 0;
-        margin-bottom: 0;
+    .section-9 .section-left {
+        font-size: 7.2rem;
+        display: flex;
+        font-weight: 600;
+        justify-content: flex-end;
+        align-items: center;
+
+        width: 30%;
+        height: 100vh;
     }
 
-    .section-wp .left {
-        width: 100%;
-        height: 100%;
+    .section-9 .section-right {
+        font-size: 6.3rem;
+        font-weight: 800;
+        display: flex;
+        justify-content: flex-start;
+        background-color: black;
+        width: 70%;
+        height: 100vh;
     }
 
-    .section-wp .right {
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        position: absolute;
-        padding-top: var(--space3Xl);
-        margin-left: 0;
-        padding-left: var(--spaceL);
+    .section-10 .section-left {
+        font-size: 7.2rem;
+        display: flex;
+        font-weight: 600;
+        justify-content: flex-end;
+        align-items: center;
+
+        width: 30%;
+        height: 100vh;
     }
 
-    .section-2 .content-top h1 {
-        color: #bdc3c7;
+    .section-10 .section-right {
+        font-size: 6.3rem;
+        font-weight: 800;
+        display: flex;
+        justify-content: flex-start;
+        background-color: black;
+        width: 70%;
+        height: 100vh;
     }
 
-    .section-2 .content-top p {
-        color: white;
-    }
-
-    .section-2 .content-bottom p {
-        color: white;
-    }
-
-    .section-3 .content-top h1 {
-        color: black;
-    }
-
-    .section-3 .content-top p {
-        color: white;
-    }
-
-    .section-3 .content-bottom p {
-        color: white;
-    }
 }
