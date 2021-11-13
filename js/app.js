@@ -55,8 +55,11 @@ var x = setInterval(function () {
     var endCount = (toDistance / processCount) * 100;
 
     var processPer = 100 - endCount;
-    console.log(processPer)
     document.getElementById('processbar-load').style.width = processPer + '%';
 
 }, 1000);
+
+
+
+
 
