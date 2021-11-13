@@ -57,7 +57,6 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 /* HERO */
@@ -311,6 +310,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: var(--spaceM);
 }
 
 .section-right {
@@ -319,6 +319,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: var(--spaceM);
 }
 
 .section-headding {
@@ -382,9 +383,6 @@ body {
     position: relative;
     top: 0;
 }
-
-
-
 
 
 @media screen and (max-width: 767px) {
