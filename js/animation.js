@@ -1,3 +1,6 @@
+ScrollOut({
+    targets: ".txtHello",
+});
 
 ScrollOut({
     targets: ".toLeft",

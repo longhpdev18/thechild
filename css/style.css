@@ -39,6 +39,71 @@
     font-size: 62.5%;
 }
 
+.fontsizeS {
+    font-size: 16px;
+}
+
+.fontsizeM {
+    font-size: 24px;
+}
+
+.fontsizeL {
+    font-size: 32px;
+}
+
+.fontsizeXL {
+    font-size: 48px;
+}
+
+.fontsize2XL {
+    font-size: 56px;
+}
+
+.fontsize3XL {
+    font-size: 63px;
+}
+
+.fontsize4XL {
+    font-size: 72px;
+}
+
+.fontWeight600 {
+    font-weight: 600;
+}
+
+.align-start {
+    display: flex;
+    align-items: start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fontWeight800 {
+    font-weight: 800;
+}
+
+.text-white {
+    color: white;
+}
+
+.rounded {
+    border-radius: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.shadow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     .blur-white {
         background-color: rgba(255, 255, 255, .5);
@@ -58,6 +123,16 @@ body {
     flex-direction: column;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
 /* HERO */
 
 .hero {
@@ -66,13 +141,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
     position: fixed;
 
     background-image: url(http://madagui.com.vn/assets/uploads/2016/04/nhung-tia-nang-ban-mai-nd-large.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.z-1 {
+    z-index: 1 !important;
+}
+
+.z-2 {
+    z-index: 2 !important;
+}
+
+.z-3 {
+    z-index: 3 !important;
+}
+
+.z-4 {
+    z-index: 4 !important;
+}
+
+.z-5 {
+    z-index: 5 !important;
+}
+
+.img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.section-absolute {
+    position: absolute !important;
 }
 
 .hero .hero-wp {
@@ -144,6 +255,8 @@ body {
     margin-top: var(--spaceL);
 }
 
+
+
 .hero-processbar .processbar {
     background-color: var(--whiteColor3);
     width: 100%;
@@ -204,10 +317,58 @@ body {
 
 .section-wp {
     width: 100%;
+    max-width: 120rem;
+    height: 80%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     font-size: 3.2rem;
     padding: var(--spaceM);
+}
+
+.content-top {
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-bottom {
+    width: 100%;
+    height: 60rem;
+    flex: 1;
+    overflow: hidden;
+}
+
+.section-image {
+    flex: 1;
+}
+
+.section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.content-button {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spaceL);
+}
+
+.btn-view {
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
 }
 
 .section-white {
@@ -228,19 +389,13 @@ body {
     flex-direction: column;
 }
 
-.section-center span {
-    font-size: 6rem;
-    background: -webkit-linear-gradient(45deg, #6717cd, #2871fa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-right: 2rem;
+.bgGradientBlue {
+    color: white;
+    background: linear-gradient(45deg, #6717cd, #2871fa);
 }
 
-.section-center h1 {
-    font-size: 7.8rem;
-    background: -webkit-linear-gradient(45deg, #6717cd, #2871fa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.bgGradientBlue:hover {
+    background: linear-gradient(-45deg, #6717cd, #2871fa);
 }
 
 .txtGradientBlue {
@@ -273,24 +428,43 @@ body {
 
 .section-headding {
     width: 100%;
-    min-height: 4rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    flex-direction: column;
+    font-size: 2.4rem;
+    color: rgba(255, 255, 255, .9);
 }
 
 .line-drag {
     width: 10rem;
-    height: 1rem;
+    height: .5rem;
     background-color: #bdc3c7;
-    border-radius: 10px;
+    border-radius: 100px;
+    margin-top: var(--spaceS);
 }
 
 .bottom-0 {
     bottom: 0;
     left: 0;
 }
+
+.section-hello[data-scroll] {
+    transition: all 2s;
+}
+
+.section-hello[data-scroll="out"] {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.section-hello[data-scroll="in"] {
+    opacity: 0;
+    transform: translateY(-200px);
+}
+
 
 [data-scroll] {
     transition: all 2s;
@@ -374,9 +548,6 @@ body {
     transition-delay: .6s;
 }
 
-
-
-
 .section-0 {
     width: 100%;
     z-index: 2;
@@ -386,6 +557,7 @@ body {
 
 .section-1 {
     z-index: 3;
+    overflow: hidden;
 }
 
 .section-sticky {
@@ -415,21 +587,18 @@ body {
     object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
-    .section-image {
-        height: 60%;
-    }
+.txtHello[data-scroll] {
+    transition: 2s linear;
+}
 
-    .section-image img {
-        width: 100%;
-        height: 60%;
-    }
+.txtHello[data-scroll="in"] {
+    transform: scale(2);
+}
 
-    .section-wp span {
-        font-size: 4.2rem;
-    }
+.mb-20 {
+    margin-bottom: 20px;
+}
 
-    .section-wp h1 {
-        font-size: 5.6rem;
-    }
+.txtHello[data-scroll="out"] {
+    transform: scale(1);
 }

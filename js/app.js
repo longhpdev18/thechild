@@ -21,22 +21,22 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if (days <= 10) {
+    if (days < 10) {
         $('.clock-days').html(days);
     } else {
         $('.clock-days').html(days);
     }
-    if (hours <= 10) {
+    if (hours < 10) {
         $('.clock-hours').html('0' + hours);
     } else {
         $('.clock-hours').html(hours);
     }
-    if (minutes <= 10) {
+    if (minutes < 10) {
         $('.clock-minutes').html('0' + minutes);
     } else {
         $('.clock-minutes').html(minutes);
     }
-    if (seconds <= 10) {
+    if (seconds < 10) {
         $('.clock-seconds').html('0' + seconds);
     } else {
         $('.clock-seconds').html(seconds);
@@ -58,8 +58,6 @@ var x = setInterval(function () {
     document.getElementById('processbar-load').style.width = processPer + '%';
 
 }, 1000);
-
-
 
 
 
