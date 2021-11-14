@@ -284,6 +284,7 @@ img {
     align-items: center;
     margin-top: var(--spaceS);
     padding: var(--spaceS);
+    color: rgba(255, 255, 255, .8);
 }
 
 .hero-expired .expired {
@@ -292,7 +293,7 @@ img {
 }
 
 .expired-text strong {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.6rem;
 }
 
@@ -559,6 +560,14 @@ img {
 
 .delay-6[data-scroll] {
     transition-delay: .6s;
+}
+
+.delay-9[data-scroll] {
+    transition-delay: .9s;
+}
+
+.delay-12[data-scroll] {
+    transition-delay: 1.2s;
 }
 
 .section-pin {
