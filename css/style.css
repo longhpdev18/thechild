@@ -305,6 +305,10 @@ img {
     display: block;
 }
 
+* {
+    text-align: center;
+}
+
 /* SECTION */
 .section {
     width: 100%;
