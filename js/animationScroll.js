@@ -1,41 +1,28 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.timeline({
+    scrollTrigger: {
+        trigger: '.section-1',
+        start: 'center center',
+        end: 'bottom top',
+        scrub: true,
+        pin: true,
+    }
+})
+    .to(".txtHello", { scale: 3 })
+    .to('.txtScroll', { y: -50 })
+    .to('.line-drag', { y: -50 });
 
-gsap.to('.txtScroll', {
-    y: -20,
-    duration: 2,
-    start: "top 60%",
-    end: "top 40%",
+gsap.timeline({
     scrollTrigger: {
-        trigger: '.section-1',
-        start: "60% center",
-        end: "+=300px",
-        markers: true,
+        trigger: '.hero',
+        start: 'center center',
+        end: 'bottom top',
         scrub: true,
-    },
+
+        pin: true,
+    }
 })
-gsap.to('.line-drag', {
-    y: -25,
-    duration: 3,
-    start: "top 60%",
-    end: "top 40%",
-    scrollTrigger: {
-        trigger: '.section-1',
-        start: "60% center",
-        end: "+=300px",
-        markers: true,
-        scrub: true,
-    },
-})
-gsap.to('.txtHello', {
-    scale: 100,
-    duration: 1,
-    start: "top 60%",
-    end: "top 40%",
-    scrollTrigger: {
-        trigger: '.section-1',
-        start: "60% center",
-        end: "+=300px",
-        markers: true,
-        scrub: true,
-    },
-})
+    .to(".txtDalat", { scale: 3 })
+
+
+
+

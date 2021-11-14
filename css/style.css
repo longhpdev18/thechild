@@ -141,8 +141,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-
     background-image: url(http://madagui.com.vn/assets/uploads/2016/04/nhung-tia-nang-ban-mai-nd-large.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,6 +213,11 @@ img {
     font-size: 7.2rem;
     font-weight: 900;
     font-family: var(--mainFont);
+
+}
+
+.txtDalat {
+    visibility: visible;
 }
 
 .hero-box .title-years {
@@ -309,6 +312,10 @@ img {
     text-align: center;
 }
 
+.section-fixed {
+    position: fixed;
+}
+
 /* SECTION */
 .section {
     width: 100%;
@@ -316,7 +323,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .section-wp {
@@ -347,7 +354,9 @@ img {
 }
 
 .section-image {
-    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .section-image img {
@@ -552,15 +561,12 @@ img {
     transition-delay: .6s;
 }
 
-.section-0 {
+.section-pin {
     width: 100%;
-    z-index: 2;
-    display: flex;
-    align-items: flex-end;
+    height: 100vh;
 }
 
 .section-1 {
-    z-index: 3;
     overflow: hidden;
 }
 
@@ -576,33 +582,6 @@ img {
     top: 0;
 }
 
-
-
-.section-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-image img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-}
-
-.txtHello[data-scroll] {
-    transition: 2s linear;
-}
-
-.txtHello[data-scroll="in"] {
-    transform: scale(2);
-}
-
 .mb-20 {
     margin-bottom: 20px;
-}
-
-.txtHello[data-scroll="out"] {
-    transform: scale(1);
 }
