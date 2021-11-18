@@ -363,6 +363,7 @@ img {
     height: 60rem;
     flex: 1;
     overflow: hidden;
+    position: relative !important;
 }
 
 .section-image {
@@ -622,6 +623,53 @@ img {
     margin-bottom: 20px;
 }
 
+.home-slider {
+    position: relative;
+}
+
+.home-slider img {
+    object-fit: cover;
+    margin-right: var(--spaceS);
+}
+
+.slick-prev {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    font-size: 2.3rem;
+    z-index: 10;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    outline: none;
+    border: none;
+    top: 16%;
+    left: 10px;
+}
+
+.slick-next {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    font-size: 2.3rem;
+    z-index: 10;
+    top: 16%;
+    right: 20px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    outline: none;
+    border: none;
+}
+
+.slick-slider {
+    display: flex !important;
+}
+
 @media screen and (max-width: 768px) {
 
     .txtTitleSmall {
@@ -630,5 +678,15 @@ img {
 
     .txtTitle {
         font-size: 4.2rem !important;
+    }
+
+    .slick-prev {
+        top: 30%;
+        left: 10px;
+    }
+
+    .slick-next {
+        top: 30%;
+        right: 15px;
     }
 }
