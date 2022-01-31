@@ -1,8 +1,8 @@
 
-var end = new Date('Feb 4,2022 2:30:00').getTime();
+var end = new Date('Feb 4,2022 7:00:00').getTime();
 var start = new Date('Feb 14,2021 21:30:00').getTime();
 
-var toEnd = new Date('Feb 4,2022 2:30:00').getTime();
+var toEnd = new Date('Feb 4,2022 7:00:00').getTime();
 var toStart = new Date('Feb 14,2021 21:30:00').getTime();
 
 var x = setInterval(function () {
